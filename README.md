@@ -1,0 +1,5 @@
+# hadoop_java
+解析数据并存入Hbase中;
+使用hbase的关键在于怎么设计hbase中的rowkey的结构，才能提高查询的效率，hbase中的rowkey是按大小的顺序排列的;
+columnfamily尽量少，过多会使columnfamily之间产生影响;
+一级域名_num_二级域名作为rowkey，host_phone为value;
